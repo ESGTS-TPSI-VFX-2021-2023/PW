@@ -1,0 +1,29 @@
+kbody{
+    background-color:darkgray;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+    color: white;
+}
+
+#titulo2{
+    color: black;
+}
+
+.titulosVerdes{
+    color: green;
+}
+
+.titulosSublinhados{
+    text-decoration: underline;
+}
+
+#tituloAzul{
+    color: blue;
+}
+
+p span{
+    color: green;
+}
