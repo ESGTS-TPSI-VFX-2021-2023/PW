@@ -1,0 +1,25 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Centrar elemento */
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h1{
+    color: blue;
+}
+
+div{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
