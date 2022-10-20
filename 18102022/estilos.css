@@ -1,5 +1,7 @@
-body{
+body, html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    border: 0px;
 }
 
 /* Centrar elemento */
@@ -17,9 +19,97 @@ h1{
     color: blue;
 }
 
-div{
+#contentCadeira{
     border: 1px solid black;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
+}
+
+#contentDescricao{
+    background-color: gray;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#tableSumarios{
+    border: 1px solid black;
+    width: 100%;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+#tableSumarios td{
+    border: 0px;
+}
+
+#tableSumarios thead tr{
+    background-color: black;
+    color: #e0e0e0;
+}
+
+.linhaCinza{
+    background-color: #e0e0e0;
+}
+
+.linhaBranca{
+    background-color: white;
+}
+
+#contentVoltar{
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+
+/*GRIDS*/
+#grid{
+    display: grid;
+    grid-column: auto auto auto;
+    width: 100%;
+}
+
+#cabecalho{
+    background-color:black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 100px;
+}
+
+#esquerda{
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 400px;
+}
+
+#centro{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 400px;
+}
+
+#direita{
+    background-color: gray;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 400px;
+}
+
+#rodape{
+    background-color:black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 100px;
+}
+
+#tableMenu{
+    margin-top: 30px;
 }
