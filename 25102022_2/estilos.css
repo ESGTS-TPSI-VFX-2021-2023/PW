@@ -1,0 +1,56 @@
+body, html{
+    border: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#grid{
+    display: grid;
+    grid-column: auto auto auto auto auto auto auto auto auto auto auto auto;
+    width: 100%;
+}
+
+#sidebar{
+    background-color: #333333;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#sidecontent{
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
+
+#header{
+    background-color: gray;
+    height: 80px;
+    width: 100%;
+}
+
+#footer{
+    background-color: gray;
+    height: 80px;
+    width: 100%;
+}
+
+#content{
+    min-height: 500px;
+}
+
+#menu{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 80px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu li{
+    list-style: none;
+}
+
+#menu li a{
+    color: white;
+    line-height: 40px;
+}
