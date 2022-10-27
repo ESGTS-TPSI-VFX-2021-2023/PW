@@ -1,0 +1,88 @@
+body, html{
+    border: 0px;
+    margin: 0px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+#zona1{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#zona2{
+    background-color: red;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#zona3{
+    background-color: green;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#zona4{
+    background-color: yellow;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.zonas{
+    height: 500px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+    
+    #zona1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #zona2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #zona3{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #zona4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    #zona1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #zona2{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    #zona3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #zona4{
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+}
