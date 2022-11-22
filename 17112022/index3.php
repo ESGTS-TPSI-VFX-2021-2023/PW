@@ -1,5 +1,8 @@
 <?php 
     
+    $numero1 = null;
+    $numero2 = null;
+
     if ( isset($_GET['numero1']) && isset($_GET['numero2']) ){
 
         // Ler informações em GET
@@ -33,6 +36,11 @@
 
     }
 
+    if (isset($_GET["btnLimpar"])) {
+        $numero1 = null;
+        $numero2 = null;
+    }
+
     ?>
 
 <!DOCTYPE html>
@@ -50,11 +58,15 @@
 
         <input type="text" name="numero2" value="<?= $numero2 ?>" placeholder="Enter second number">
 
-        <input type="submit" name="btnTudo" value="Total">
+        <input type="submit" name="btnTudo" value="Total"> 
         <input type="submit" name="btnSomar" value="+">
         <input type="submit" name="btnSubtrair" value="-">
         <input type="submit" name="btnMultiplicar" value="*">
         <input type="submit" name="btnDividir" value="/">
+
+        <!-- Botão Limpar -->
+        <input type="submit" name="btnLimpar" value="Limpar">
+
     </form>
 
     <?php 
