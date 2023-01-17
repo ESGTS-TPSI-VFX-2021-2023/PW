@@ -5,6 +5,21 @@ $user = "root";
 $passwd = "";
 
 $pdo = new PDO($dsn, $user, $passwd);
+
+if (isset($_GET["idDelete"])){
+
+    $data = [
+        'idAluno' => $_GET["idDelete"]
+    ];
+
+    $sql = "DELETE FROM alunos WHERE idAluno = :idAluno";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute($data);
+
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +41,7 @@ $pdo = new PDO($dsn, $user, $passwd);
 
     foreach($rows as $row) {
 
-        printf("{$row['idAluno']} {$row['Nome']} {$row['Email']}<br>");
+        printf("{$row['idAluno']} {$row['Nome']} {$row['Email']} (<a href='list.php?idDelete={$row['idAluno']}'>Eliminar</a>) | (<a href='editForm.php?idAluno={$row['idAluno']}'>Editar</a>)<br>");
     }
     ?>
 
