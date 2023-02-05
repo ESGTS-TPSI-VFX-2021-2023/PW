@@ -3,8 +3,10 @@
 $cookie_name = "user";
 $cookie_value = "Rafael Silva";
 
-// create cookie
 setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
+// Delete coookie
+setcookie($cookie_name, "", time() - 3600);
 
 ?>
 
@@ -17,6 +19,10 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
     <title>PHP Cookies</title>
 </head>
 <body>
-    
+    <?php 
+
+        echo "O valor é " . $_COOKIE[$cookie_name];
+
+    ?>
 </body>
 </html>
