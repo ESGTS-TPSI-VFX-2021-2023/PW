@@ -1,0 +1,33 @@
+#grid{
+    display: grid;
+    grid-column: auto auto auto auto;
+    width: 100%;
+}
+
+#header{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 100px;
+}
+
+#lateral{
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    height: 100px;
+}
+
+#principal{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 100px;
+}
+
+#footer{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 100px;
+}

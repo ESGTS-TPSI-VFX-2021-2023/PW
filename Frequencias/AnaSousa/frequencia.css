@@ -1,0 +1,56 @@
+body, html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    border: 0px;
+    background-color: white;
+    
+}
+
+/* Centrar elemento */
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*GRIDS*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+#grid{
+    display: grid;
+    grid-column: auto auto auto auto auto auto auto auto auto auto auto auto;
+    width: 100%;
+}
+
+#header{
+    background-color:white;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    height: 100px;
+}
+
+#sidebar{
+    background-color: gray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 400px;
+}
+
+#content{
+    background-color: white;
+    grid-column-start: 4;
+    grid-column-end: 12;
+    height: 400px;
+}
+
+#footer{
+    background-color:black;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    height: 100px;
+}
+
+#tableMenu{
+    margin-top: 30px;
+}
+}

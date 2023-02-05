@@ -1,0 +1,88 @@
+#bodyClaro{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+#bodyEscuro{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+
+#titulo {
+
+    padding-left: 70px;
+
+}
+
+#tituloEscuro {
+
+    padding-left: 70px;
+    color: white;
+
+}
+
+#footerClaro{
+
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+
+#footerEscuro{
+
+    background-color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+#tema {
+
+    padding-left: 750px;
+
+}
+
+#sidebarMenu{
+
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
+
+#sidebarMenuEscuro{
+
+    background-color: white;
+    height: 100%;
+    width: 100%;
+
+}
+
+#textoClaro{
+
+    color: white;
+
+}
+
+#textoSidebarClaro {
+
+    color: white;
+
+}
+
+#textoSidebarEscuro {
+
+    color: black;
+
+}
+
+#headerClaro{
+
+    background-color: white;
+
+}
